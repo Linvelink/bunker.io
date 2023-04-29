@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bunker Service</title>
+	<style>
+		body {
+			background-color: #a4a4a4;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.logo {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.btn {
+			display: block;
+			margin: 10px auto;
+			padding: 10px 20px;
+			background-color: #fff;
+			color: #000;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			transition: all 0.3s ease;
+		}
+		.btn:hover {
+			background-color: #000;
+			color: #fff;
+		}
+		.about {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.8);
+			z-index: 999;
+			overflow: auto;
+		}
+		.about-content {
+			background-color: #fff;
+			color: #000;
+			margin: 10% auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			max-width: 80%;
+			text-align: justify;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 24px;
+			color: #000;
+			cursor: pointer;
+		}
+		.address {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="logo" src="https://i.ibb.co/YkmF9Ps/Ig-HM6-UESg-T4.jpg" alt="Логотип Bunker Service">
+		<h1>Bunker Service</h1>
+		<a class="btn" href="https://wa.me/8952732064564">Whatsapp</a>
+		<a class="btn" href="tel:8952732063453453">Номер телефона</a>
+		<a class="btn" href="#" onclick="document.getElementById('about').style.display='block'">О нас</a>
+		<div id="about" class="about">
+			<div class="about-content">
+				<span class="close" onclick="document.getElementById('about').style.display='none'">&times;</span>
+				<p>Мы - команда профессионалов, которые занимаются обслуживанием и ремонтом автомобилей любых марок и моделей. Наш автосервис оснащен самым современным оборудованием, что позволяет нам проводить качественную диагностику и ремонт автомобилей.</p>
+				<p>Мы предоставляем следующие услуги:</p>
+				<ul>
+					<li>Обслуживание и ремонт автомобилей любых марок и моделей</li>
+					<li>Ультразвуковая чистка форсунок</li>
+					<li>Ремонт ДВС</li>
+					<li>Ремонт КПП</li>
+					<li>Диагностика ЭБУ</li>
+					<li>Шумо и виброизоляция автомобилей</li>
+				</ul>
+				<p>Мы гарантируем качество нашей работы и предоставляем гарантию на все виды услуг. Обращайтесь к нам, и мы сделаем все возможное, чтобы ваш автомобиль был в идеальном состоянии!</p>
+			</div>
+		</div>
+		<p class="address">Лесхозная улица, 5/5, Говнодерск, Абхазская область</p>
+	</div>
+	<script>
+		// Адаптация под смартфоны
+		var viewport = document.querySelector("meta[name=viewport]");
+		if (screen.width < 600) {
+			viewport.setAttribute("content", "width=device-width, initial-scale=0.5");
+		}
+	</script>
+</body>
+</html>
